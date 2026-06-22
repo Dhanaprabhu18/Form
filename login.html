@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="CSS/style4.css">
+</head>
+<body>
+
+<div class="login-box">
+    <h2>Login Form</h2>
+
+    <form autocomplete="off">
+
+        <!-- fake fields to stop autofill -->
+        <input type="text" style="display:none">
+        <input type="password" style="display:none">
+
+        <label>User ID</label>
+        <input type="text"
+               id="userid"
+               name="random_user"
+               autocomplete="off"
+               placeholder="Enter User ID">
+
+        <label>Password</label>
+        <input type="password"
+               id="password"
+               name="random_pass"
+               autocomplete="new-password"
+               placeholder="Enter Password">
+
+        <div class="buttons">
+            <button type="button" onclick="login()">Login</button>
+            <button type="button" onclick="clearForm()">Clear</button>
+        </div>
+
+        <p id="message"></p>
+
+    </form>
+</div>
+
+<script src="JS/script2.js"></script>
+
+</body>
+</html>
